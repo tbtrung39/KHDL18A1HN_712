@@ -21,6 +21,7 @@ git checkout -b <tên nhánh chính vừa tạo>
 **LƯU Ý:** Nhánh chính làm không chính xác sẽ bị xóa, nếu mất bài sinh viên tự chịu trách nhiệm
 
 B2: Sau khi tạo nhánh chính, sinh viên tạo thêm file **<ho_va_ten.txt>** (Ví dụ: Ngo_Quang_Dai.txt) vào thư mục để bắt đầu thực hiện commit đầu tiên
+
 B3: Sau khi thêm file txt bắt đầu thực hiện commit đầu tiên cho **NHÁNH CHÍNH**. Sử dụng lệnh sau:
 
 ```
