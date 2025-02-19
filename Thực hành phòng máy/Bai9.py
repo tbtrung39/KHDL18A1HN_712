@@ -1,0 +1,6 @@
+x = float(input('Nhập tọa độ điểm x: '))
+y = float(input('Nhập tọa độ điểm y: '))
+z = float(input('Nhập tọa độ điểm z: '))
+print('Tọa độ điểm đối xứng của Oxy là: ',x,y,-z)
+print('Tọa độ điểm đối xứng của Oxz là: ',x,-y,z)
+print('Tọa độ điểm đối xứng của Oyz là: ',-x,y,z)
