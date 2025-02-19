@@ -1,0 +1,5 @@
+n=int(input("Nhập ngày: "))
+g=int(input("Nhập giờ: "))
+p=int(input("Nhập phút: "))
+s=int(input("Nhập giây: "))
+print(f'Thời gian bạn vừa nhập là {n} ngày, {g} giờ, {p} phút, {s} giây.')
