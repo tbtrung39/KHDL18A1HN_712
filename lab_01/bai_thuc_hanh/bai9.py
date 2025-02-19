@@ -1,0 +1,6 @@
+x = int(input("Nhập tọa độ x : "))
+y = int(input("Nhập tọa độ y : "))
+z = int(input("Nhập tọa độ z : "))
+print("Điểm đối xứng qua Oxy là ", x,y,-z )
+print("Điểm đối xứng qua Oxz là ",x,-y,z)
+print("Điểm đối xứng qua Oyz là ",-x,y,z)
