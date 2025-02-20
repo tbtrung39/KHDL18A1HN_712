@@ -1,0 +1,7 @@
+a = float(input("Nhập giá trị a: "))
+b = float(input("Nhập giá trị b: "))
+c = float(input("Nhập giá trị c: "))
+x_dinh = -b / (2 * a)
+y_dinh = -((b ** 2) - (4 * a * c)) / (4 * a)
+print("Đỉnh x của phương trình bậc 2 là: %0.2f"%x_dinh)
+print("Đỉnh y của phương trình bậc 2 là: %0.2f"%y_dinh)
