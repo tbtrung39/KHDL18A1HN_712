@@ -1,0 +1,6 @@
+xa=float(input("nhap hoanh do cua diem A: "))
+xb=float(input("nhap hoanh do cua diem B: "))
+ya=float(input("nhap tung do cua diem A: "))
+yb=float(input("nhap tung do cua diem B: "))
+tich=((xa**2+ya**2)**1/2)*((xb**2+yb**2)**1/2)*((xa*xb+ya*yb)/((xa**2+ya**2)**1/2)*((xb**2+yb**2)**1/2))
+print("tich vo huong cua hai diem A, B: %0.2f"%tich)
