@@ -1,0 +1,12 @@
+mssv = input("Nhập mã số sinh viên: ")
+ten_sv  = input("Nhập họ tên sinh viên: ")
+que_quan = input("Nhập quê quán sinh viên: ")
+nam_sinh = int(input("Nhập năm sinh sinh viên: "))
+diem_tb = float(input("Nhập điểm trung bình các năm học: "))
+
+print("\nThông tin sinh viên vừa nhập:")
+print(f"Mã số sinh viên: {mssv }")
+print(f"Họ tên sinh viên: {ten_sv}")
+print(f"Quê quán: {que_quan }")
+print(f"Năm sinh: {nam_sinh}")
+print(f"Điểm trung bình các năm học: {diem_tb}")
