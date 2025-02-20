@@ -1,0 +1,13 @@
+print("Chương trình nhập thông tin sinh viên.")
+mssv = input("Nhập mã số sinh viên: ")
+ten = input("Nhập họ và tên: ")
+que = input("Nhập quê quán: ")
+namsinh = int(input("Nhập năm sinh: "))
+dtb = float(input("Nhập điểm trung bình: "))
+
+print("Thông tin sinh viên:")
+print("MSSV: ", mssv)
+print("Họ và tên: ", ten)
+print("Quê quán: ", que)
+print("Năm sinh: ", namsinh)
+print("Điểm trung bình: ", dtb)
