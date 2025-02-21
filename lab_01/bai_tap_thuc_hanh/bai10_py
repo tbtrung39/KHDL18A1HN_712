@@ -1,0 +1,10 @@
+import math
+x = float(input("Nhập giá trị của x: "))
+if x > 0 and x != 1:
+  log2_x = math.log2(x)  # log cơ số 2 của x
+  f_x = (log2_x / 2) + (1 / log2_x)
+  f_x = round(f_x,2)
+  print(f"Giá trị của f({x}) là:{f_x}")
+else:
+  print("Giá trị x không hợp lệ! x phải > 0 và x ≠ 1.")
+

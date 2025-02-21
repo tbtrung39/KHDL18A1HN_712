@@ -1,0 +1,16 @@
+import itertools
+
+def tinh_xac_suat(n):
+    tong_ket_qua = 6**(3 * n)  # Mỗi xúc sắc có 6 mặt, có 3 xúc sắc tung n lần
+    dem_truong_hop = 0
+
+    for ket_qua in itertools.product(range(1, 7), repeat=3 * n):
+        for i in range(n):
+            if ket_qua[i*3:(i+1)*3] == (6, 6, 6):
+                dem_truong_hop += 1
+                break  # Chỉ cần thỏa mãn ít nhất 1 lần là được tính
+
+    return round(dem_truong_hop / tong_ket_qua, 2)
+
+n = int(input("Nhập số lần tung n: "))
+print(f"Xác suất để có ít nhất một lần cả 3 xúc sắc ra 6: {tinh_xac_suat(n)}")
