@@ -1,23 +1,24 @@
-def doc_so_co_ba_chu_so(n):
-    if not (100 <= n <= 999):
-        return "Số không hợp lệ"
+def doc_ba_chu_so(so):
+    hang_tram = so // 100
+    hang_chuc = (so % 100) // 10
+    hang_don_vi = so % 10
+    chu_so = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
+    if hang_tram == 0:
+        return "Số nhập vào không phải là số có ba chữ số"
+    doc_tram = chu_so[hang_tram] + " trăm"
+    doc_chuc = chu_so[hang_chuc] + " mươi" if hang_chuc != 0 else "lẻ"
+    doc_don_vi = chu_so[hang_don_vi]
+    if hang_chuc == 0 and hang_don_vi != 0:
+        doc_chuc = "lẻ"
+    if hang_chuc == 1:
+        doc_chuc = "mười"
+    if hang_chuc > 1 and hang_don_vi == 0:
+        doc_don_vi = ""
+    if hang_don_vi == 1:
+        doc_don_vi = "mốt"
+    if hang_chuc > 1 and hang_don_vi == 5:
+        doc_don_vi = "lăm"
+    return doc_tram + " " + doc_chuc + " " + doc_don_vi
 
-    don_vi = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
-    chuc = ["", "mười", "hai mươi", "ba mươi", "bốn mươi", "năm mươi", "sáu mươi", "bảy mươi", "tám mươi", "chín mươi"]
-    tram = ["", "một trăm", "hai trăm", "ba trăm", "bốn trăm", "năm trăm", "sáu trăm", "bảy trăm", "tám trăm", "chín trăm"]
-
-    tram_n = n // 100
-    chuc_n = (n % 100) // 10
-    don_vi_n = n % 10
-
-    if chuc_n == 0 and don_vi_n == 0:
-        return tram[tram_n]
-    elif chuc_n == 0:
-        return f"{tram[tram_n]} {don_vi[don_vi_n]}"
-    elif don_vi_n == 0:
-        return f"{tram[tram_n]} {chuc[chuc_n]}"
-    else:
-        return f"{tram[tram_n]} {chuc[chuc_n]} {don_vi[don_vi_n]}"
-
-n = int(input("Nhập số nguyên có ba chữ số: "))
-print(doc_so_co_ba_chu_so(n))
+so = int(input("Nhập vào một số nguyên có ba chữ số: "))
+print(doc_ba_chu_so(so))

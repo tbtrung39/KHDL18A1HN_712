@@ -1,8 +1,5 @@
-def chu_so_hang_tram(n):
-    if n < 100:
-        return 0
-    else:
-        return (n // 100) % 10
+def hang_tram(so):
+    return (abs(so) // 100) % 10 if abs(so) >= 100 else 0
 
-n = int(input("Nhập vào một số nguyên: "))
-print(chu_so_hang_tram(n))
+so = int(input("Nhập vào một số nguyên: "))
+print(f"Chữ số hàng trăm của số {so} là: {hang_tram(so)}")

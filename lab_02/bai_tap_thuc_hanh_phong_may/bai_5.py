@@ -1,36 +1,14 @@
 def ten_thang(thang):
-    if thang == 1:
-        return "Tháng Một"
-    elif thang == 2:
-        return "Tháng Hai"
-    elif thang == 3:
-        return "Tháng Ba"
-    elif thang == 4:
-        return "Tháng Tư"
-    elif thang == 5:
-        return "Tháng Năm"
-    elif thang == 6:
-        return "Tháng Sáu"
-    elif thang == 7:
-        return "Tháng Bảy"
-    elif thang == 8:
-        return "Tháng Tám"
-    elif thang == 9:
-        return "Tháng Chín"
-    elif thang == 10:
-        return "Tháng Mười"
-    elif thang == 11:
-        return "Tháng Mười Một"
-    elif thang == 12:
-        return "Tháng Mười Hai"
-    else:
-        return "Tháng không hợp lệ"
+    thang_ten = {
+        1: "January", 2: "February", 3: "March", 4: "April",
+        5: "May", 6: "June", 7: "July", 8: "August",
+        9: "September", 10: "October", 11: "November", 12: "December"
+    }
+    return thang_ten.get(thang, "Tháng không hợp lệ")
 
 while True:
-    thang = int(input("Nhập tháng (1-12): "))
-    ten = ten_thang(thang)
-    if ten != "Tháng không hợp lệ":
-        print(ten)
+    thang = int(input("Nhập vào tháng (1-12): "))
+    if 1 <= thang <= 12:
         break
-    else:
-        print("Tháng không hợp lệ, vui lòng nhập lại.")
+    print("Tháng nhập vào không hợp lệ, vui lòng nhập lại.")
+print(f"Tháng {thang} có tên là {ten_thang(thang)}")

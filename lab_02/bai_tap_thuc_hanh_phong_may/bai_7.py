@@ -1,16 +1,16 @@
 def xep_loai_hoc_luc(diem):
-    if 0.0 <= diem <= 3.0:
+    if 0 <= diem < 3:
         return "Loại Kém"
-    elif diem == 4.0:
+    elif diem == 4:
         return "Loại Yếu"
-    elif 5.0 <= diem <= 6.0:
+    elif 5 <= diem <= 6:
         return "Loại Trung bình"
-    elif 7.0 <= diem <= 8.0:
+    elif 7 <= diem <= 8:
         return "Loại Khá"
-    elif 9.0 <= diem <= 10.0:
+    elif 9 <= diem <= 10:
         return "Loại Giỏi"
     else:
         return "Điểm không hợp lệ"
 
-diem = float(input("Nhập điểm trung bình: "))
-print(xep_loai_hoc_luc(diem))
+diem_tk = float(input("Nhập điểm tổng kết: "))
+print(f"Học lực của bạn: {xep_loai_hoc_luc(diem_tk)}")

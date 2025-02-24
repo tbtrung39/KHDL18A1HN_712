@@ -1,26 +1,13 @@
-def ten_thu(thu):
-    if thu == 1:
-        return "Chủ nhật"
-    elif thu == 2:
-        return "Thứ hai"
-    elif thu == 3:
-        return "Thứ ba"
-    elif thu == 4:
-        return "Thứ tư"
-    elif thu == 5:
-        return "Thứ năm"
-    elif thu == 6:
-        return "Thứ sáu"
-    elif thu == 7:
-        return "Thứ bảy"
-    else:
-        return "Thứ không hợp lệ"
+def tim_thu(t):
+    thu = {
+        1: "Sunday", 2: "Monday", 3: "Tuesday",
+        4: "Wednesday", 5: "Thursday", 6: "Friday", 7: "Saturday"
+    }
+    return thu.get(t, "Thứ không hợp lệ")
 
 while True:
-    thu = int(input("Nhập thứ (1-7): "))
-    ten = ten_thu(thu)
-    if ten != "Thứ không hợp lệ":
-        print(ten)
+    thu = int(input("Nhập thứ trong tuần (1-7): "))
+    if 1 <= thu <= 7:
         break
-    else:
-        print("Thứ không hợp lệ, vui lòng nhập lại.")
+    print("Thứ nhập vào không hợp lệ, vui lòng nhập lại.")
+print(f"Thứ đã nhập có tên là: {tim_thu(thu)}")

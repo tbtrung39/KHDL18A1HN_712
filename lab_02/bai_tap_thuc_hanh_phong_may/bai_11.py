@@ -1,18 +1,20 @@
-def ngay_tiep_theo(ngay, thang):
-    so_ngay_trong_thang = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
-    if not (1 <= thang <= 12 and 1 <= ngay <= so_ngay_trong_thang[thang]):
-        return "Ngày tháng không hợp lệ"
-
-    ngay += 1
-    if ngay > so_ngay_trong_thang[thang]:
+def ngay_tiep_theo(ngay, thang, nam):
+    ngay_trong_thang = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30,
+                        7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
+    if (nam % 4 == 0 and nam % 100 != 0) or (nam % 400 == 0):
+        ngay_trong_thang[2] = 29
+    if ngay < ngay_trong_thang[thang]:
+        ngay += 1
+    else:
         ngay = 1
-        thang += 1
-        if thang > 12:
+        if thang == 12:
             thang = 1
-
-    return f"{ngay}/{thang}"
+            nam += 1
+        else:
+            thang += 1
+    return f"Ngày tiếp theo là ngày {ngay}/{thang}/{nam}"
 
 ngay = int(input("Nhập ngày: "))
 thang = int(input("Nhập tháng: "))
-print(f"Ngày tiếp theo là: {ngay_tiep_theo(ngay, thang)}")
+nam = int(input("Nhập năm: "))
+print(ngay_tiep_theo(ngay, thang, nam))
