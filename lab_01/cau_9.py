@@ -1,6 +1,0 @@
-x=float(input("nhap hoanh do: "))
-y=float(input("nhap tung do: "))
-z=float(input("nhap cao do: "))
-print("doi xung qua Oxy=(%0.2f"%x,";%0.2f"%y,";%0.2f"%(-z),")")
-print("doi xung qua Oxz=(%0.2f"%x,";%0.2f"%(-y),";%0.2f"%z,")")
-print("doi xung qua Oyz=(%0.2f"%(-x),";%0.2f"%y,";%0.2f"%z,")")
