@@ -1,4 +1,4 @@
-a,b,c=map(int,input("nhap he so cua phuong trinh bac 2: ").split())
+a,b,c=map(int,input("nhap he so cua phuong trinh bac 2: ").split(","))
 delta=b**2-4*a*c
 if delta <0:
     print("phuong trinh vo nghiem")
