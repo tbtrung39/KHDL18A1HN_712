@@ -1,9 +1,0 @@
-hieu_dien_the = 220  
-cuong_do_dong_dien = 2.7  
-gia_tien_dien = 7000 
-thoi_gian_su_dung = float(input("Nhập thời gian sử dụng bóng đèn (giây): "))
-cong_suat = hieu_dien_the * cuong_do_dong_dien  
-nang_luong_tieu_thu = cong_suat * thoi_gian_su_dung  
-nang_luong_kWh = nang_luong_tieu_thu / 3_600_000  
-tien_dien = nang_luong_kWh * gia_tien_dien
-print(f"Tiền điện phải trả là: {round(tien_dien, 2)} đồng")

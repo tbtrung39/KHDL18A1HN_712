@@ -1,9 +1,0 @@
-xA, yA = map(float, input("Nhập tọa độ đỉnh A (xA yA): ").split())
-xB, yB = map(float, input("Nhập tọa độ đỉnh B (xB yB): ").split())
-xC, yC = map(float, input("Nhập tọa độ đỉnh C (xC yC): ").split())
-xG = (xA + xB + xC) / 3
-yG = (yA + yB + yC) / 3
-xG = round(xG, 2)
-yG = round(yG, 2)
-print(f"Trọng tâm của tam giác là G({xG}, {yG})")
-
