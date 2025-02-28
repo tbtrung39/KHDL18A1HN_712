@@ -1,0 +1,7 @@
+n=int(input("Nhap n: "))
+tong=1
+tich=1
+for i in range(0,n+1):
+    tich*=((2*(i+1))/(2*i+3))
+    tong+=tich
+print("tong%0.3f"%tong)
