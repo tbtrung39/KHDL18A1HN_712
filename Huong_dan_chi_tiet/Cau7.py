@@ -1,4 +1,4 @@
-# Cau 77.
+# Cau 7.
 # a.
 h=int(input("Nhập chiều cao tam giác: "))
 

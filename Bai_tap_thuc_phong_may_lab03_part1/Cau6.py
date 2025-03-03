@@ -1,4 +1,4 @@
-# Cau 66.
+# Cau 6.
 n = int(input("Nhap so n: "))
 tong_bac_3 = 0
 for i in range(1, n + 1):

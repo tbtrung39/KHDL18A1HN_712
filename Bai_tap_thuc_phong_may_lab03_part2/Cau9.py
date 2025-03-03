@@ -1,4 +1,5 @@
-# a.
+# Câu 9.
+#  a.
 n = int(input("Nhập số nguyên dương n: "))
 while n <= 0:
     n = int(input("Vui lòng nhập lại n (n phải lớn hơn 0): "))

@@ -1,4 +1,4 @@
-# Cau 44.
+# Cau 4.
 n = int(input("Nhap so n: "))
 print("Cac so nguyen to nho hob hoac bang", n, "la:", end = " ")
 for i in range(2, n+1):

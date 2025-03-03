@@ -1,4 +1,4 @@
-# Cau 33.
+# Cau 3.
 n = int(input("Nhao so n: "))
 dem_uoc = 0
 for i in range(1, n+1):

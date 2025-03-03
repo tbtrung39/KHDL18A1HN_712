@@ -1,3 +1,4 @@
+# Câu 11.
 # Nhập số hàng của tam giác
 n = int(input("Nhập số hàng của tam giác: "))
 

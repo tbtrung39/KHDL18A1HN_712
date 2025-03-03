@@ -1,4 +1,4 @@
-# Cau 77.
+# Cau 7.
 n = int(input("Nhập số nguyên n: "))
 S = 0
 for i in range(1, n+1):

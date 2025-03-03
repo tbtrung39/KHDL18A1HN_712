@@ -1,4 +1,4 @@
-# Cau 55.
+# Cau 5.
 chieu_cao = 3
 chieu_rong = 5
 for i in range(chieu_cao):

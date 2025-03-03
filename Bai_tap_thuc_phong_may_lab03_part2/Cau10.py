@@ -1,3 +1,4 @@
+# Câu 10.
 n = int(input("Nhập một số nguyên dương: "))
 if n <= 0:
     print("Vui lòng nhập một số nguyên dương lớn hơn 0.")

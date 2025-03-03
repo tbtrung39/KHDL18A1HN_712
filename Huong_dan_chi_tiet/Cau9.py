@@ -1,4 +1,4 @@
-# Cau 99.
+# Cau 9.
 print ("Liệt kê tất cả số nguyên tố có 2 chữ số:")
 dem = 0
 sum_nguyen_to=0
