@@ -1,8 +1,9 @@
-a=int(input("nhap so nguyen duong a: "))
-if a<2:
-    print("khong the phan tich thanh thua so nguyen to")
-if a==2:
-
-
-
-
+n = int(input("Nhập vào một số nguyên dương: "))
+i = 2  
+while i <= n:
+    if n % i == 0:
+        print(i, end=" ")  
+        n = n // i  
+    else:
+        i += 1  
+print(f"Phân tích thừa số nguyên tố của",n, end="")
