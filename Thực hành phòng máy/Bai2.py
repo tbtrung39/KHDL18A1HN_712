@@ -1,0 +1,22 @@
+n = int(input("Nhập số nguyên dương n: "))
+while n <= 0:
+    n = int(input("Số không hợp lệ! Nhập lại n: "))
+S1 = 0
+i = 2
+while i <= n:
+    S1 += 1 / i
+    i += 1
+S2 = 0
+i = 2
+while i <= n:
+    S2 += 1 / (i * (i + 1))
+    i += 1
+import math
+S3 = 0
+i = 2
+while i <= n:
+    S3 += 1 / math.sqrt(i)
+    i += 1
+print("S1 =", S1)
+print("S2 =", S2)
+print("S3 =", S3)
