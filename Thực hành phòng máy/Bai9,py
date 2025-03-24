@@ -1,0 +1,17 @@
+Str = input("Nhập chuỗi ký tự: ")
+max_dem = 0
+ky_tu_max = ''
+for i in range(len(Str)):
+    ky_tu = Str[i]
+    dem = 0
+    for j in range(len(Str)):
+        if Str[j] == ky_tu:
+            dem += 1
+    if dem >= max_dem:
+        max_dem = dem
+        ky_tu_max = ky_tu
+ket_qua = ""
+for i in range(max_dem):
+    ket_qua += ky_tu_max
+
+print("Chuỗi mới là:", ket_qua)
