@@ -1,0 +1,6 @@
+List_ = (["mon", 73], ["tue", 89], ["wed", 95], ["thu", 103], ["fri", 115], ["sat", 128], ["sun", 120])
+print("Danh sách ban đầu:", List_)
+print("Phần tử thứ hai của sublist thứ ba:", List_[2][1])
+List_ = List_ + (["extra", 100],)
+print("Danh sách sau khi thêm sublist:", List_)
+print("Tổng giá trị của thứ hai, ba, bảy:", sum(List_[i][1] for i in (1, 2, 6)))
