@@ -1,0 +1,16 @@
+a = [2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+tong = sum(a)
+print("Tổng các phần tử:", tong)
+so_duong = [x for x in a if x > 0]
+dem_so_duong = len(so_duong)
+tong_so_duong = sum(so_duong)
+print("Số lượng số dương:", dem_so_duong)
+print("Tổng các số dương:", tong_so_duong)
+vi_tri_am_dau = next((i for i, x in enumerate(a) if x < 0), -1)
+print("Vị trí phần tử âm đầu tiên:", vi_tri_am_dau)
+vi_tri_duong_cuoi = max((i for i, x in enumerate(a) if x > 0), default=-1)
+print("Vị trí phần tử dương cuối cùng:", vi_tri_duong_cuoi)
+max_value = max(a)
+vi_tri_max_cuoi = len(a) - 1 - a[::-1].index(max_value)
+print("Phần tử lớn nhất:", max_value)
+print("Vị trí phần tử lớn nhất cuối cùng:", vi_tri_max_cuoi)
