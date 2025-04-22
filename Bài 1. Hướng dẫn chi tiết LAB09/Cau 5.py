@@ -1,5 +1,4 @@
 # Cau 5.
-'''
 # Cach 1.
 from ntpath import join
 
@@ -13,7 +12,6 @@ def sum_recursive(n, result, current_sum, current_list):
             sum_recursive(n,result, current_sum +i, current_list + [i])
 n = int(input("Nhap so tu  nhien N: "))
 sum_recursive(n, [], 0, [])
-'''
 # Cach 2.
 def sum_recursive(n, result):
     current_sum = 0
