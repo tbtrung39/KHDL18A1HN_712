@@ -1,6 +1,5 @@
 import sys
 sys.path.append("C://KHDL18A1HN_712//bai_tap//bai10//main10")
-# main_hinhhoc.py
 import sys
 sys.path.append("C:/KHDL18A1HN_712/bai_tap/bai10")
 
