@@ -1,5 +1,3 @@
-# gpt.py
-
 def giai_pt_bac_nhat(a, b):
     if a == 0:
         return "Vô nghiệm" if b != 0 else "Vô số nghiệm"
