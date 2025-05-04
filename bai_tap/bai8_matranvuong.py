@@ -1,5 +1,3 @@
-# matranvuong.py
-
 def nhap_matran(n):
     mat = []
     for i in range(n):
