@@ -1,5 +1,3 @@
-# doicoso2.py
-
 def is_binary_string(s):
     return all(c in '01' for c in s)
 
