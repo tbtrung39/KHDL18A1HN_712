@@ -23,3 +23,4 @@ def main():
         print("Giá trị thập phân:", doi_co_so_16_sang_10(s_loc))
     else:
         print("Không xác định được hệ cơ số hợp lệ.")
+main()
