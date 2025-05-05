@@ -14,3 +14,4 @@ def main():
     canh = 5
     print(f"Chu vi hình vuông cạnh {canh}: {ChuviHinhvuong(canh)}")
     print(f"Diện tích hình vuông: {Dien_tich_hinh_vuong(canh)}")
+main()
