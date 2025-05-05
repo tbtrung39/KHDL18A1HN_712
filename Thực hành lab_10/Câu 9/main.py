@@ -10,4 +10,5 @@ def main():
     ds_sorted = qlyhanghoa.sap_xep_giam_theo_thue(ds)
 
     qlyhanghoa.in_danh_sach(ds_sorted, title="Sau khi sắp xếp giảm dần theo Thuế VAT")
+main()
 
