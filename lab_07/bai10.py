@@ -1,8 +1,0 @@
-a = int(input("Nhập số tự nhiên a: "))
-b = int(input("Nhập số tự nhiên b: "))
-tap_a = set(str(a))
-tap_b = set(str(b))
-print("Các chữ số trong a:", tap_a)
-print("Các chữ số trong b:", tap_b)
-print("Chữ số xuất hiện ở cả 2:", tap_a & tap_b)
-print("Chữ số không lặp:", (tap_a | tap_b) - (tap_a & tap_b))
