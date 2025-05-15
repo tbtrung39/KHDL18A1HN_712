@@ -1,0 +1,16 @@
+import matranvuong
+
+n = int(input("Nhập kích thước ma trận NxN: "))
+matran = matranvuong.nhap_ma_tran(n)
+
+print("\nMa trận vừa nhập:")
+matranvuong.in_ma_tran(matran)
+
+print("\nMa trận chuyển vị:")
+matran_chuyenvi = matranvuong.chuyen_vi(matran)
+matranvuong.in_ma_tran(matran_chuyenvi)
+
+if matranvuong.la_doi_xung(matran):
+    print("\nMa trận đối xứng qua đường chéo chính.")
+else:
+    print("\nMa trận không đối xứng.")
