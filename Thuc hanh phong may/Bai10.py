@@ -1,0 +1,10 @@
+def bai_10():
+    m = input("Nhập số tự nhiên m: ")
+    n = input("Nhập số tự nhiên n: ")
+    set_m = set(m)
+    set_n = set(n)
+    chung = set_m.intersection(set_n)
+    tong = sum(int(digit) for digit in chung)
+    print(f"Chữ số chung của m và n là: {sorted(chung)}")
+    print(f"Tổng các chữ số chung: {tong}")
+bai_10()
